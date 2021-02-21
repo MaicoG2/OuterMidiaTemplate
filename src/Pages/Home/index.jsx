@@ -1,9 +1,10 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 
-
 //styled
 import { Global, Default, Loader } from './style'
 
+//loader
+import LogoLight from '../../assets/images/loader.png'
 
 //Components
 const Header = lazy(() => import('../../Sections/Header'))
@@ -15,6 +16,8 @@ const Section5 = lazy(() => import('../../Sections/Section5'))
 const Section6 = lazy(() => import('../../Sections/Section6'))
 const Section7 = lazy(() => import('../../Sections/Section7'))
 const Section8 = lazy(() => import('../../Sections/Section8'))
+
+
 
 const Home = () => {
 
@@ -34,32 +37,38 @@ const Home = () => {
         let top = (bodyRect.top) * (-1);
         let height = event.path[1].innerHeight
 
-        if(top >= height - 100)
-        {
+        if (top >= height - 150) {
             setHeader(true)
             setAnimation(true)
 
         }
-        else
-        {
+        else {
             setHeader(false)
         }
     }
 
     return (
         <>
-            <Suspense fallback={<Loader><div></div><div></div></Loader>}>
+            <Suspense fallback={
+                <Loader>
+                    <div className="pai-loader">
+                        <div className="flex-center white-loading">
+                            <img src={LogoLight} alt="outermidia-logo-loader" />
+                            <span className="animated-background"></span>
+                        </div>
+                    </div>
+                </Loader>}>
                 <Global />
                 <Default >
-                    <Header change={changeHeader}/>
-                    <Section1/>
-                    <Section2 animation={animation}/>
-                    <Section3/>
-                    <Section4/>
-                    <Section5/>
-                    <Section6/>
-                    <Section7/>
-                    <Section8/>
+                   <Header change={changeHeader} />
+                    <Section1 />
+                    <Section2 animation={animation} />
+                    <Section3 />
+                    <Section4 />
+                    <Section5 />
+                    <Section6 />
+                    <Section8 />
+                    <Section7 />
                 </Default>
             </Suspense>
         </>

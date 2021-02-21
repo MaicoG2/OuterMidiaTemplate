@@ -1,24 +1,45 @@
 import React from 'react';
 
 //styled
-import { Container, Title, Button } from './style'
+import { Container, Title, Button, Logo, Video, DropDown } from './style'
 
 //Scroll    
 import { Link } from 'react-scroll'
 
+//logo
+import LogoLight from '../../assets/images/logo_light.png'
+
 const Section1 = () => {
 
-
     return (
-        <Container name="section1">
+        <Container name="section1" style={{ order: 0 }}>
+            <Video>
+                <div className="video-foreground">
+                    <iframe src="https://www.youtube.com/embed/xfL4rcMb8xY?autoplay=1&mute=1&enablejsapi=1&controls=0&loop=1&playlist=xfL4rcMb8xY&showinfo=0" frameborder="0" title="outer-apresentacao" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                </div>
+                <div className="background" />
+            </Video>
+            <Logo>
+                <img src={LogoLight} alt="logo-outer" />
+            </Logo>
             <Title>
                 <h1>
-                    <p>Somos a conexão entre você e o seu público ideal.</p>
+                    <p>O Out of Home vai surpreender sua marca e transformar seus resultados em vendas imediatas</p>
                 </h1>
             </Title>
-            <Button>
-                <Link to="section2" spy={true} smooth={true} duration={800}>Entenda</Link>
-            </Button>
+            <div>
+                <Button style={window.innerWidth <= 480 ? { marginRight: '0px' } : { marginRight: '25px' }}>
+                    <Link to="section2" spy={true} smooth={true} duration={800}>Entenda</Link>
+                </Button>
+                <DropDown >
+                    <Button style={window.innerWidth <= 480 ? { display: 'none' } : { width: '200px' }}>Fale com a gente!</Button>
+                    <div class="dropdown-content">
+                        <a href="#">
+                        <i class="fas fa-envelope" style={{color:'orange'}}></i>Email Comercial</a>
+                        <a href="#"><i class="fab fa-telegram-plane" style={{color:' #0088cc'}}></i>Telegram</a>
+                    </div>
+                </DropDown>
+            </div>
         </Container>
     )
 }

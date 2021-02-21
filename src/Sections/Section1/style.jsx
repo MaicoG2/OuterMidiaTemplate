@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Section1 from '../../assets/background/Section1.webp'
+import Section1 from '../../assets/background/Section1.jpg'
 
 export const Container = styled.section`
 display:flex;
@@ -8,13 +8,8 @@ justify-content:center;
 align-items:center;
 height:100vh;
 width:100%;
-padding-top:80px;
+padding:0 90px;
 
-background-image:linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.43)),url(${Section1});
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center 10;
-background-attachment: fixed;
 
 @keyframes fadeInUp {
   from { 
@@ -30,33 +25,56 @@ background-attachment: fixed;
   }
 }
 
-&>div,
-&>button
+@media(max-width:480px)
 {
-    opacity: 0;
-    animation: fadeInUp 1s ease-in-out 0s forwards;
+  padding: 20px;
+  background:#3d3d3d;
+}
+`
+export const Logo = styled.div`
+opacity: 0;
+animation: fadeInUp 1s ease-in-out 0s forwards;
+animation-delay:1s;
+display:flex;
+
+img{
+   width: 40vw;
+}
+
+@media(max-width:480px)
+{
+  img{
+    width:85vw;
+  }
 }
 `
 
 export const Title = styled.div`
 width:880px;
-animation-delay: 1s;
+opacity: 0;
+animation: fadeInUp 1s ease-in-out 0s forwards;
+animation-delay:2.5s;
+margin:20px 0 30px 0;
 
 h1{
     height:max-content;
     text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
     p{
-        font-weight: 700;
-        font-size: 42px;
         letter-spacing: 1px;
-        line-height: 54px;
         text-align: center;
         text-transform: uppercase;
-        color: #ffffff;
-        font-family:"Montserrat";
         text-decoration:none;
         cursor:pointer;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 600;
+        color: #FFF;
+        line-height:30px;
+        max-width:600px;
 
         &:nth-child(3){
             font-size:30px;
@@ -64,20 +82,32 @@ h1{
         }
     }
 }
+
+@media(max-width:480px){
+  width:100%;
+
+  h1{
+    p{
+      font-weight:300;
+      width:85vw;
+    }
+  }
+}
 `
 
 export const Button = styled.button`
 width:150px;
 height:44px;
-margin-top:25px;
 
-background-color:#e0c438;
-border:none;
+border:solid 1px grey;
+background-color:rgba(255, 255, 255, 0.1);
 border-radius:3px;
 outline:none;
 
 transition:all .3s;
-animation-delay: 2s;
+opacity: 0;
+animation: fadeInUp 1s ease-in-out 0s forwards;
+animation-delay:3.5s;
 
 a
 {
@@ -105,10 +135,11 @@ a
 
 &:hover 
 {
-    background-color:white;
+    background-color:#0d9fc0;
+    border:none;
     a{
-        color:#e0c438;
         padding-right: 25px;
+        color:white;
     }
 }
 
@@ -118,4 +149,97 @@ a
     right: 0;
 }
 
+@media(max-width:480px)
+{
+  margin-right:0;
+}
+
+`
+
+export const Video = styled.div`
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+
+  .video-foreground,
+  iframe{
+    position: absolute;
+  top: 0px;
+  bottom:-50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  }
+
+  .video-foreground{
+    padding-bottom: 56.25%;
+  }
+
+  .background{
+    width:100vw;
+    height:100vw;
+    position:absolute;
+    top:0;
+    left:0;
+    background: linear-gradient(rgb(0 0 0 / 55%),rgb(0 0 0 / 52%));
+  }
+
+  @media(max-width:480px)
+  {
+    display:none;
+  }
+`
+
+export const DropDown = styled.div`
+  position: relative;
+  display: inline-block;
+
+  button{
+    position: relative;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
+  }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0 0 10px 10px;
+
+
+  i{
+    margin-right:10px;
+    font-size:20px;
+  }
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:flex;
+  transition:all .4s;
+}
+
+.dropdown-content a:hover {background-color: #d8d8d8;
+  border-radius: 0 0 10px 10px;
+  }
+
+&:hover .dropdown-content {
+  display: block;
+}
+
+&:hover button {
+  background-color: #0d9fc0;
+}
 `

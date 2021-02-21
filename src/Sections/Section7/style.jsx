@@ -3,15 +3,15 @@ import { Container } from '../Section1/style'
 import { Default } from '../../Pages/Home/style'
 
 export const Container7 = styled(Container)`
-background:#1b1b1b;
-padding-top:50px;
-`
+background:white;
+min-height:100vh;
+height:max-content;
+padding: 80px 90px;
 
-export const Title = styled.span`
-font-size: 42px;
-color: white;
-letter-spacing: -0.3px;
-font-weight: 700;
+@media(max-width:480px)
+{
+    display:none;
+}
 `
 
 export const Subtitle = styled.span`
@@ -22,83 +22,73 @@ font-size: 16px;
 line-height: 1.5;
 `
 
-export const Division = styled.div`
-display:flex;
-align-items:center;
-justify-content:center;
-margin:20px 0;
-
-div:nth-child(2)
-{
-    height:10px;
-    width:10px;
-    background:#ffe100;
-    margin:0 10px;
-}
-
-div:nth-child(1),
-div:nth-child(3)
-{
-    width:70px;
-    height:1px;
-    background:#8f8f8f;
-}
-`
 
 export const Team = styled.div`
 display:flex;
 justify-content:center;
-align-items:center;
-margin-top:40px;
+align-items:flex-start;
+margin:80px 0;
 `
 
 export const Card = styled(Default)`
 justify-content:center;
-margin-right:60px;
+margin-right:80px;
 
 `
 
 export const Image = styled(Default)`
-justify-content:center;
-overflow:hidden;
-
 
 div:nth-child(1){
-height: 250px;
-width: 250px;
+height: 200px;
+width: 200px;
 border-radius: 50%;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
 }
 
-div:nth-child(2){
-    transform:translate(200px,-150px);
-    transition:all .3s linear;
-i{
-    font-size:50px;
-    color:white;
-    margin-right:20px;
-}
-}
-
 `
 
 export const Description = styled.div`
-    margin-top:20px;
+margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align:center;
 
-    span:nth-child(1)
+   p:nth-child(1)
     {
-    color: white;
+    color: #272727;
     font-weight: 800;
     font-size: 20px;
-    letter-spacing: .8px;
+    text-transform:uppercase;
     }
 
-    span:nth-child(3)
+   p:nth-child(3)
     {
-        color: #d3d3d3;
-        font-size:14px;
+        color: #777777;
+    font-size: 16px;
+    max-width: 180px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing:1px;
+    font-style: oblique;
+}
+
+div{
+    margin-top:20px;
+}
+i{
+    margin-right: 15px;
+    font-size:25px;
+    color:grey;
+    cursor:pointer;
+    transition:all .2s;
+
+    &:hover{
+        color:#6f0b88;
     }
+}
+    
 `

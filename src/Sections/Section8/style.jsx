@@ -1,17 +1,41 @@
 import styled from 'styled-components'
 
 import { Container } from '../Section1/style'
-import { Title } from '../Section7/style'
-
-import Section6 from '../../assets/background/Section6.webp'
+import { Title, Division, Section, Description, SectionLeft } from '../Section2/style'
 
 
-export const Container8 = styled(Container)`
-background-image:linear-gradient(rgba(0, 0, 0, 0.364), rgba(0, 0, 0, 0.43)),url(${Section6});
-padding:0;
+export const Title8 = styled(Title)`
+line-height:35px;
+text-align:center;
+max-width:600px;
+
+@media(max-width:480px)
+{
+  max-width:300px;
+  color:black;
+  text-align:left;
+}
 `
 
-export const Title8 = styled(Title)``
+export const Division8 = styled(Division)`
+margin-bottom:30px;
+
+@media(max-width:480px)
+{
+  margin: 0 0 15px 0;
+}
+`
+
+export const Container8 = styled(Container)`
+background:white;
+height:max-content;
+padding:100px 0;
+
+@media(max-width:480px)
+{
+  padding:50px 20px;
+}
+`
 
 export const Button = styled.div`
     width: 280px;
@@ -77,5 +101,29 @@ export const Button = styled.div`
 }
 & a:nth-of-type(4){
   transition-delay: .4s;
+}
+`
+
+export const Description8 = styled(Description)`
+
+p:nth-child(1)
+{
+  font-weight:700;
+  margin-bottom:15px;
+  text-transform:uppercase;
+  text-align:left;
+}
+
+p:nth-child(2){
+  text-align:left;
+}
+
+@media(max-width:480px){
+  p:nth-child(1),
+  p:nth-child(2)
+{
+color:#5c5c5c;
+margin:0 0 15px 0;
+}
 }
 `

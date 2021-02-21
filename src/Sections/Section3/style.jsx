@@ -1,109 +1,271 @@
 import styled from 'styled-components'
 
-//styled
-import { Container } from '../Section1/style'
-import { Default } from '../../Pages/Home/style'
-import { Division } from '../Section7/style'
-import Section3 from '../../assets/background/Section3.webp'
+import { Description,SectionLeft,Section, Title} from '../Section2/style'
 
 
-export const Container3 = styled(Container)`
-flex-direction:row;
-background-image:linear-gradient(180deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.8) 100%),url(${Section3});
-padding-top:50px;
-span{
-    font-family:"Open Sans";
-}
-&>div{
-    opacity:1;
-    animation:none;
-}
-`
-
-export const Left = styled(Default)`
-justify-content:center;
-max-width:400px;
-padding:0 20px;
-height:100%;
-color: white;
-
-svg{
-    height:200px;
-    margin-top:46px;
-    fill: #dcdcdc;
-    animation: rocket-move 2s ease-in-out infinite alternate;
-}
-
-@keyframes rocket-move{
-  to{ transform: translateY(30px); }
-}
-
-
-span:nth-child(1)
-{
-    font-size: 30px;
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: 1px;
-    text-align:center;
-    text-transform: uppercase;
-    width:100%;
-}
-
-span:nth-child(3)
-{
-    text-align:center;
-    font-size:16px;
-    color:grey;
-    max-width:80%;
-}
-`
-
-export const Right = styled.div`
+export const Container = styled.section`
+min-height:100vh;
+max-height:max-content;
+width:100%;
 display:flex;
-max-width:850px;
-flex-wrap:wrap;
+justify-content:center;
+background:white;
+flex-direction:column;
+
+@media(max-width:480px)
+{
+    background:#4291dc;
+    justify-content:flex-start;
+}
 `
 
-export const Card = styled(Default)`
-justify-content:center;
-max-width: 240px;
-height: 240px;
-border-radius: 10px;
-padding: 30px 30px;
-margin: 10px;
-background:#d8d8d8;
-transition: all 0.4s ease;
+export const Section33 = styled(Section)`
+align-items:flex-start;
+margin-left:10vw;
 
-svg{
-    height:50px;
-}
-
-span:nth-child(2)
+@media(max-width:480px)
 {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 20px 0;
-    text-align:center;
+    margin:0;
+    align-items:center;
+    padding: 20px 0 20px 0;
 }
+`
 
-span:nth-child(3)
+export const SectionLeft2 = styled(SectionLeft)`
+order: 0;
+max-width: 70%;
+
+@media(max-width:480px)
 {
-    color: #636363;
-    font-size:14px;
-    text-align:center;
-}
+    max-width:100%;
 
-&:hover{
-    margin-top: -10px;
-    background: linear-gradient(to right, #ff9966, #ff5e62);
-    box-shadow: 0 0 20px 6px #0000007a;
-    span{
-        color: white;
-        fill:white;
+    img{
+        width:100%;
     }
 }
 `
 
-export const Division3 = styled(Division)`
+export const SectionLeft3 = styled(SectionLeft)`
+order:0;
+flex:1;
+
+@media(max-width:480px)
+{
+    margin-top:-15vh;
+}
+`
+
+export const Section2 = styled(Section)`
+align-items: flex-start;
+padding-left: 5vw;
+background: white;
+position: absolute;
+height: max-content;
+right: calc(70% - 90px);
+border: solid 1px #80808070;
+padding: 40px;
+box-shadow: 0px 50px 20px -40px #000000b5;
+
+@media(max-width:480px)
+{
+    position:relative;
+    align-items:center;
+    right:0;
+    width:100%;
+    padding:20px;
+    box-shadow:none;
+    border:none;
+
+    &>p{
+        color:black;
+    }
+}
+`
+
+export const About = styled.div`
+display:flex;
+align-items:center;
+justify-content:center;
+width:100%;
+padding:0 90px;
+margin:150px 0;
+
+div{clip-path:none;}
+
+p
+{
+    display:flex;
+    align-items:center;
+    margin:10px 0;
+}
+i{
+    font-size:30px;
+    margin-right:10px;
+    color:#29b329
+}
+
+@media(max-width:480px)
+{
+    margin:0;
+    padding:0;
+    flex-direction:column;
+}
+`
+
+export const Description2 = styled(Description)`
+display: flex;
+align-items: center;
+
+p
+{
+    font-size: 15px;
+    display: flex;
+    text-align: left;
+    max-width: 300px;
+
+    span{
+    font-weight: 700;
+    font-size: 45px;
+    margin-right: 10px;
+    color: #0ab30a;
+    }
+}
+
+i
+{
+    font-size: 50px;
+    margin-right: 15px;
+    color: #29b329;
+}
+
+@media(max-width:480px)
+{
+    margin-top:0;
+    justify-content:center;
+    flex-direction:column;
+    max-width:250px;
+    p{
+        flex-direction:column;
+        align-items:center;
+        color:#1d1d1d!important;
+        font-weight:500;
+        font-size:16px;
+
+
+        span{
+        line-height:50px;
+        margin:0;
+        font-weight:800;
+        }
+    }
+
+    i{
+        margin:0;
+    }
+}
+`
+
+export const Description33 = styled(Description)`
+p:nth-child(1)
+{
+    font-weight:700;
+    margin-bottom:15px;
+    text-transform:uppercase;
+    text-align:left;
+}
+p:nth-child(2)
+{
+    text-align:left;
+}
+
+@media(max-width:480px)
+{
+    p:nth-child(1),
+    p:nth-child(2){
+        margin: 0 20px 20px 20px;
+        text-align:center;
+    }
+}
+`
+
+export const Sec3 = styled.div`
+display:flex;
+
+p:nth-child(1)
+{
+    font-size: 200px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: green;
+    line-height:0;
+    margin: 0 10px 0 0;
+}
+
+p:nth-child(2){
+    font-size: 40px;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    padding-top: 20px;
+    color: green;
+}
+
+@media(max-width:480px)
+{
+    flex-direction:column;
+
+    p:nth-child(1)
+    {
+    font-size: 150px;
+    line-height: 150px;
+    margin: 0;
+    justify-content:center;
+    }
+
+    p:nth-child(2)
+    {
+        text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    }
+}
+`
+
+export const Button = styled.a`
+background: #4bcc4b;
+padding: 10px 25px;
+margin-top: 20px;
+border-radius: 6px;
+color: white;
+font-weight: 600;
+letter-spacing: .6px;
+text-decoration: none;
+transition:all .5s;
+
+&:hover{
+    background:green;
+}
+
+@media(max-width:480px)
+{
+    max-width:300px;
+    background:#298f29;
+    text-align:center;
+    line-height:25px;
+}
+`
+
+export const Title3 = styled(Title)`
+@media(max-width:480px)
+{
+    color:#f5f5f5;
+}
 `
