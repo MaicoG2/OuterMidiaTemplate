@@ -20,7 +20,7 @@ const Section1 = () => {
                 <div className="background" />
             </Video>
             <Logo>
-                <img src={LogoLight} alt="logo-outer" />
+                <img src={LogoLight} alt="logo-outer"  height="auto"/>
             </Logo>
             <Title>
                 <h1>
