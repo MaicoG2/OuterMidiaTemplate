@@ -105,3 +105,35 @@ align-items:center;
 
 `
 
+export const Footer = styled.footer`
+height: 50px;
+width:100%;
+background-color: white;
+order: 7;
+display: flex;
+padding: 0 90px;
+justify-content: space-between;
+align-items: center;
+
+a{
+text-decoration: none;
+color: black;
+transition: all 1s;
+display:flex;
+align-items: center;
+
+  :hover {
+    color: green;
+  }
+
+  i {
+    margin-right: 5px;
+  }
+
+  img{
+    margin-left: 10px;
+    padding-bottom:5px;
+  }
+}
+`
+

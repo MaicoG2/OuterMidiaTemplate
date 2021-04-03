@@ -47,6 +47,13 @@ p:nth-child(2)
     margin:15px 0;
     width:100%;
     height:100%;
+    margin: 15px 0;
+    width: 100%;
+    border: solid 2px #d8d7d7;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px -10px black;
+    height: 100%;
 
     i{
         margin-right:30px;

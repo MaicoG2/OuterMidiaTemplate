@@ -3,7 +3,7 @@ import styled from 'styled-components'
 //styled
 import { Container } from '../Section1/style'
 
-import Teste from '../../assets/images/beira-mar.jpg'
+import Teste from '../../assets/images/beira-mar.png'
 
 export const Container2 = styled(Container)`
 padding:0px;

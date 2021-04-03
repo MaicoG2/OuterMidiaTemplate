@@ -34,8 +34,8 @@ const Section3 = () => {
                         <div />
                     </Division>
                     <Description33>
-                        <p >Use o Poder de impacto para atrair clientes novos todos os dias.</p>
-                        <p >Nossos painéis premiums em grandes formatos e localizados em pontos estratégicos aumentam o engajamento de sua empresa com seus clientes para promover campanhas de sucesso</p>
+                        <p >Use o Poder de impacto para atrair clientes todos os dias.</p>
+                        <p >Nossos painéis premiums em grandes formatos e localizados em pontos estratégicos aumentam o engajamento entre sua empresa e clientes promovendo campanhas de sucesso</p>
                     </Description33>
                     <Button href="#">
                         Seja notado agora pelos seus clientes
@@ -43,7 +43,7 @@ const Section3 = () => {
                 </Section33>
             </About>
            <About style={{ justifyContent: 'flex-end', marginBottom:'0' }}>
-                 <SectionLeft2 style={{ order: 0 }}>
+                 <SectionLeft2 style={{ order: 0, alignItems:'flex-start' }}>
                     {isMobile()}
                 </SectionLeft2> 
                  <Section2>

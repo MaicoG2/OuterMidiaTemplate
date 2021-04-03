@@ -1,10 +1,13 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 
 //styled
-import { Global, Default, Loader } from './style'
+import { Global, Default, Loader, Footer } from './style'
 
 //loader
 import LogoLight from '../../assets/images/loader.png'
+
+//evo
+import logoEvo from '../../assets/images/logo-evo.png'
 
 //Components
 const Header = lazy(() => import('../../Sections/Header'))
@@ -69,6 +72,15 @@ const Home = () => {
                     <Section6 />
                     <Section8 />
                     <Section7 />
+                    <Footer>
+                        <a href="">
+                            Rua Claude Barnard 2 - Trindade, Florianópolis - SC, 88036-045
+                        </a>
+                        <a href="https://agenciaevoup.com.br/">
+                        <i class="fas fa-code"></i>
+                        Site desenvolvido por<img src={logoEvo} height="30px"/>
+                        </a>
+                    </Footer>
                 </Default>
             </Suspense>
         </>

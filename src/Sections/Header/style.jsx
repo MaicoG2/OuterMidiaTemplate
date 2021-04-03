@@ -47,7 +47,15 @@ div,nav{
     animation: fadeInUp 1s ease-in-out 0s forwards;
 }
 `
-export const Logo = styled.div``
+export const Logo = styled.div`
+
+@media(max-width: 480px){
+  height: 100%;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}`
 
 export const Zap = styled.div`
   position: fixed;
@@ -103,9 +111,14 @@ export const Zap = styled.div`
 
 export const Nav = styled.nav`
 height:100%;
+flex: 1;
+display: flex;
+justify-content: flex-end;
 ul{
     display:flex;
     height:100%;
+    flex-direction:row;
+    justify-content: flex-end;
 
     li{
         font-weight: 500;
@@ -134,5 +147,53 @@ ul{
 
 .active{
   color:#38d5e0;
+}
+
+@media(max-width: 480px) {
+  position:absolute;
+  flex-direction:column;
+  top:0;
+  right:${({hidde}) => hidde ? '-900px':'0'};
+  height: 100vh;
+  width: 100%;
+  align-items: flex-end;
+  background: #020202b0;
+  display:${({change}) => change ? 'inherit':'none'};
+  z-index:2;
+
+
+  ul {
+    flex-direction:column;
+    width:60vw;
+    background:white;
+  }
+
+}
+`
+
+export const Number = styled.div`
+margin-left: 30px;
+
+
+p{
+  font-family: sans-serif;
+font-weight: 800; }
+
+@media(max-width:480px)
+{
+  display: none;
+}
+`
+
+export const MenuHb = styled.div`
+display:none;
+position: absolute;
+right: 20px;
+font-size: 20px;
+
+@media(max-width:480px)
+{
+  display:inline-block;
+
 }
 `

@@ -38,12 +38,15 @@ export const Subtitle = styled.p`
     color: gainsboro;
     font-weight: 300;
     margin-top: 40px;
+    max-width: 500px;
+    text-align: center;
 
     @media(max-width:480px)
     {
       font-size: 19px;
     margin-top: 20px;
     max-width:250px;
+    text-align: left;
     }
 `
 

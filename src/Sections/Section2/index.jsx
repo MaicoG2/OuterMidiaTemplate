@@ -16,10 +16,10 @@ const Section2 = ({ animation }) => {
                 </Division>
                 <Description>
                     <p >milhões de
-                    pessoas estão sendo impactadas
+                    pessoas são impactadas
                     por mensagens instaladas em
                     nossas Plataformas Out Of Home
-                    conduzindo uma forte relação
+                    construindo uma forte relação
                     entre marcas e públicos .
                     </p>
                     <p>Nossa operação de OOH e Live

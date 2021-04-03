@@ -20,7 +20,7 @@ const Section8 = () => {
                 <SectionLeft style={{ order: 0, flex: 1 }}>
                     <img width={window.innerWidth >= 480 ? "100%":"100%"} src={Teste} alt="outermidia-sobre" />
                 </SectionLeft>
-                <Section style={window.innerWidth >= 480 ? { alignItems: 'flex-start', marginLeft: '100px' } : { alignItems: 'flex-start', width: '100%', marginTop: '20px' }}>
+                <Section style={window.innerWidth >= 480 ? { alignItems: 'flex-start', marginLeft: '100px', flex:'0.5' } : { alignItems: 'flex-start', width: '100%', marginTop: '20px' }}>
                     <Title8><span >Bike Point SC</span>.</Title8>
                     <Division8 >
                         <div />

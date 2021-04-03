@@ -39,36 +39,6 @@ const Section4 = () => {
 
     return (
         <Container2 name="portfolio" style={{order:4}}>
-            <Countdown>
-                <Info>
-                    <p>Faces Publicitárias</p>
-                    <div>
-                    <i className="fas fa-bullhorn"></i>
-                        <p>+1.000</p>
-                    </div>
-                </Info>
-                <Info>
-                    <p>Clientes</p>
-                    <div>
-                    <i className="fas fa-users"></i>
-                        <p>3,800</p>
-                    </div>
-                </Info>
-                <Info>
-                    <p>Espaços Publicitários no Sul</p>
-                    <div>
-                    <i className="fas fa-eye"></i>
-                        <p>+ 500</p>
-                    </div>
-                </Info>
-                <Info>
-                    <p>Campanhas Atendidas</p>
-                    <div>
-                    <i className="fas fa-globe-asia"></i>
-                        <p>+2000</p>
-                    </div>
-                </Info>
-            </Countdown>
           <Section1>
                 <Title>Veja alguns de nossos produtos</Title>
                 <Division>

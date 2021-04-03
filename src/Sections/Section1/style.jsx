@@ -221,6 +221,12 @@ export const DropDown = styled.div`
     margin-right:10px;
     font-size:20px;
   }
+
+  @media(max-width:480px)
+  {
+    border-radius: 0;
+
+  }
 }
 
 .dropdown-content a {

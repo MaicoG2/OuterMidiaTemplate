@@ -28,7 +28,6 @@ const Section7 = () => {
                         <p>Caio Portela</p><br />
                         <p>Gestor de Tráfego e Lançamento</p>
                         <div>
-                            <a><i class="fab fa-instagram"></i></a>
                             <a><i class="fab fa-linkedin-in" style={{ marginRight: '0px' }}></i></a>
                         </div>
                     </Description>
@@ -41,7 +40,6 @@ const Section7 = () => {
                         <p>Mitchell Henrique</p><br />
                         <p>Social Media & cowpriter</p>
                         <div>
-                            <a><i class="fab fa-instagram"></i></a>
                             <a><i class="fab fa-linkedin-in" style={{ marginRight: '0px' }}></i></a>
                         </div>
                     </Description>
@@ -54,7 +52,6 @@ const Section7 = () => {
                         <p>Victor Marques</p><br />
                         <p>Design e Desenvolvedor</p>
                         <div>
-                            <a><i class="fab fa-instagram"></i></a>
                             <a><i class="fab fa-linkedin-in" style={{ marginRight: '0px' }}></i></a>
                         </div>
                     </Description>

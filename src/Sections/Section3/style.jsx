@@ -22,6 +22,7 @@ flex-direction:column;
 export const Section33 = styled(Section)`
 align-items:flex-start;
 margin-left:10vw;
+flex:0.5;
 
 @media(max-width:480px)
 {
@@ -249,6 +250,7 @@ font-weight: 600;
 letter-spacing: .6px;
 text-decoration: none;
 transition:all .5s;
+text-align:center;
 
 &:hover{
     background:green;

@@ -27,12 +27,12 @@ const Section1 = () => {
                     <p>O Out of Home vai surpreender sua marca e transformar seus resultados em vendas imediatas</p>
                 </h1>
             </Title>
-            <div>
+            <div style={window.innerWidth <= 480 ? { display: 'flex', flexDirection: 'column' } : {  }}>
                 <Button style={window.innerWidth <= 480 ? { marginRight: '0px' } : { marginRight: '25px' }}>
                     <Link to="section2" spy={true} smooth={true} duration={800}>Entenda</Link>
                 </Button>
                 <DropDown >
-                    <Button style={window.innerWidth <= 480 ? { display: 'none' } : { width: '200px' }}>Fale com a gente!</Button>
+                    <Button style={window.innerWidth <= 480 ? { marginTop:'20px' } : { width: '200px' }}>Fale com a gente!</Button>
                     <div class="dropdown-content">
                         <a href="#">
                         <i class="fas fa-envelope" style={{color:'orange'}}></i>Email Comercial</a>
