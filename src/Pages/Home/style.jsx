@@ -135,5 +135,17 @@ align-items: center;
     padding-bottom:5px;
   }
 }
+
+@media(max-width: 480px)
+{
+  height: max-content;
+    flex-direction: column;
+    padding: 15px;
+    align-items: flex-start;
+
+    a {
+      margin-bottom: 10px;
+    }
+}
 `
 
