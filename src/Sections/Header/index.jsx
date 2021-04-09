@@ -35,9 +35,6 @@ const Header = ({ change }) => {
                             <Link to="parcerias" spy={true} smooth={true} duration={800} onClick={() => setHidden(!hidde)}>Bike Point</Link>
                         </li>
                         <li>
-                            <Link to="time" spy={true} smooth={true} duration={800} onClick={() => setHidden(!hidde)}>Equipe</Link>
-                        </li>
-                        <li>
                             <Link to="contato" spy={true} smooth={true} duration={800} onClick={() => setHidden(!hidde)}>Contato</Link>
                         </li>
                     </ul>

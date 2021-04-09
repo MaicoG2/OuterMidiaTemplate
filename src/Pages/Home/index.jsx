@@ -17,7 +17,6 @@ const Section3 = lazy(() => import('../../Sections/Section3'))
 const Section4 = lazy(() => import('../../Sections/Section4'))
 const Section5 = lazy(() => import('../../Sections/Section5'))
 const Section6 = lazy(() => import('../../Sections/Section6'))
-const Section7 = lazy(() => import('../../Sections/Section7'))
 const Section8 = lazy(() => import('../../Sections/Section8'))
 
 
@@ -71,9 +70,8 @@ const Home = () => {
                     <Section5 />
                     <Section6 />
                     <Section8 />
-                    <Section7 />
                     <Footer>
-                        <a href="">
+                        <a href="https://www.google.com/maps/dir//outermidia/@-27.5936325,-48.5268682,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x952739d8599461cd:0xdb941c301d74e55f!2m2!1d-48.5269439!2d-27.5836986">
                             Rua Claude Barnard 2 - Trindade, Florianópolis - SC, 88036-045
                         </a>
                         <a href="https://agenciaevoup.com.br/">
