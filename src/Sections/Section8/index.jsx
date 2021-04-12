@@ -28,13 +28,15 @@ const Section8 = () => {
                         <div />
                     </Division8>
                     <Description8>
-                        <p >Use o Poder de impacto para atrair clientes novos todos os dias.
+                        <p >Somos uma equipe criativa  que trabalha na interseção do urbanismo e da comunicação.
                         </p>
-                        <p>Nossos painéis premiums em grandes formatos e localizados em pontos estratégicos aumentam o engajamento de sua empresa com seus clientes para promover campanhas de sucesso
+                        <p>Acreditamos que contar histórias é mais crucial do que nunca para lugares significativos. 
+
+É por isso que combinamos percepções inovadoras sobre mídia out of home com uma forte experiência em branding, e criação de conteúdo.
                         </p>
                     </Description8>
-                    <Button href="#">
-                        Seja notado agora pelos seus clientes
+                    <Button href="https://api.whatsapp.com/send?phone=5548984683976&text=Ol%C3%A1%2C%20gostaria%20de%20alavancar%20meu%20neg%C3%B3cio">
+                        Conheça mais sobre a Bike Point
                     </Button>
                 </Section>
             </About>

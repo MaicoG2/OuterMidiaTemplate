@@ -28,7 +28,6 @@ padding:0 90px;
 @media(max-width:480px)
 {
   padding: 20px;
-  background:#3d3d3d;
 }
 `
 export const Logo = styled.div`
@@ -173,22 +172,42 @@ export const Video = styled.div`
   pointer-events: none;
   }
 
+
   .video-foreground{
     padding-bottom: 56.25%;
+
+    @media(max-width: 480px)
+    {
+      padding: 0;
+    }
   }
 
   .background{
     width:100vw;
-    height:100vw;
+    height:100vh;
     position:absolute;
     top:0;
     left:0;
-    background: linear-gradient(rgb(0 0 0 / 55%),rgb(0 0 0 / 52%));
+    background: linear-gradient(rgb(0 0 0 / 82%),rgb(0 0 0 / 73%));
   }
 
-  @media(max-width:480px)
+  img {
+    display: none;
+  }
+
+  @media(max-width: 480px)
   {
-    display:none;
+
+    .video-foreground {
+      iframe {
+        display: none;
+      }
+    }
+    img {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+    }
   }
 `
 

@@ -50,7 +50,7 @@ const Header = ({ change }) => {
             <Zap>
                 <button class="cta">
                     <i class="fab fa-whatsapp"></i>
-                    <a href="https://api.whatsapp.com/send?phone=554891320921&text=Ol%C3%A1%2C%20gostaria%20de%20alavancar%20meu%20neg%C3%B3cio" class="button-text">Fale Conosco</a>
+                    <a href="https://api.whatsapp.com/send?phone=5548984683976&text=Ol%C3%A1%2C%20gostaria%20de%20alavancar%20meu%20neg%C3%B3cio" class="button-text">Fale Conosco</a>
                 </button>
             </Zap>
         </>

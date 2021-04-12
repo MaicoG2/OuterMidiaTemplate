@@ -40,7 +40,7 @@ const Section4 = () => {
     return (
         <Container2 name="portfolio" style={{order:4}}>
           <Section1>
-                <Title>Veja alguns de nossos produtos</Title>
+                <Title>Portfólio</Title>
                 <Division>
                     <div />
                     <div />

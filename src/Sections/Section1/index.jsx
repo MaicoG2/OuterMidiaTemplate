@@ -8,6 +8,7 @@ import { Link } from 'react-scroll'
 
 //logo
 import LogoLight from '../../assets/images/logo_light.png'
+import Mobile from '../../assets/images/Mobile-1.png'
 
 const Section1 = () => {
 
@@ -15,8 +16,9 @@ const Section1 = () => {
         <Container name="section1" style={{ order: 0 }}>
             <Video>
                 <div className="video-foreground">
-                    <iframe src="https://www.youtube.com/embed/xfL4rcMb8xY?autoplay=1&mute=1&enablejsapi=1&controls=0&loop=1&playlist=xfL4rcMb8xY&showinfo=0" frameborder="0" title="outer-apresentacao" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-                </div>
+                    <iframe src={"https://www.youtube.com/embed/idp3JiFJxD4?autoplay=1&mute=1&enablejsapi=1&controls=0&loop=1&playlist=idp3JiFJxD4&showinfo=0"} frameborder="0" title="outer-apresentacao" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                <img src={Mobile} alt=""/>
+                    </div>
                 <div className="background" />
             </Video>
             <Logo>
@@ -34,9 +36,9 @@ const Section1 = () => {
                 <DropDown >
                     <Button style={window.innerWidth <= 480 ? { marginTop:'20px' } : { width: '200px' }}>Fale com a gente!</Button>
                     <div class="dropdown-content">
-                        <a href="#">
+                        <a href="mailto:atendimento@outermidia.com.br">
                         <i class="fas fa-envelope" style={{color:'orange'}}></i>Email Comercial</a>
-                        <a href="#"><i class="fab fa-telegram-plane" style={{color:' #0088cc'}}></i>Telegram</a>
+                        {/* <a href="#"><i class="fab fa-telegram-plane" style={{color:' #0088cc'}}></i>Telegram</a> */}
                     </div>
                 </DropDown>
             </div>

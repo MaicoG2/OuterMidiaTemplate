@@ -17,6 +17,7 @@ const Section3 = lazy(() => import('../../Sections/Section3'))
 const Section4 = lazy(() => import('../../Sections/Section4'))
 const Section5 = lazy(() => import('../../Sections/Section5'))
 const Section6 = lazy(() => import('../../Sections/Section6'))
+const Section7 = lazy(() => import('../../Sections/Section7'))
 const Section8 = lazy(() => import('../../Sections/Section8'))
 
 
@@ -69,6 +70,7 @@ const Home = () => {
                     <Section4 />
                     <Section5 />
                     <Section6 />
+                    <Section7 />
                     <Section8 />
                     <Footer>
                         <a href="https://www.google.com/maps/dir//outermidia/@-27.5936325,-48.5268682,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x952739d8599461cd:0xdb941c301d74e55f!2m2!1d-48.5269439!2d-27.5836986">

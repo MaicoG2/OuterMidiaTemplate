@@ -3,8 +3,8 @@ import React from 'react';
 import { Container7, Subtitle, Team, Card, Image, Description } from './style'
 import { Title, Division } from '../Section2/style'
 
-import Member1 from '../../assets/fundadores/Caio.webp'
-import Member2 from '../../assets/fundadores/Mitchell.webp'
+import Member1 from '../../assets/fundadores/pablo.png'
+import Member2 from '../../assets/fundadores/Fred.png'
 import Member3 from '../../assets/fundadores/Victor.webp'
 
 const Section7 = () => {
@@ -17,7 +17,7 @@ const Section7 = () => {
                 <div />
                 <div />
             </Division>
-            <Subtitle>Somos em três pessoas na equipe, cada um contando com uma especialização diferente e nichada para o setor de marketing, afim de termos os melhores resultados possíveis em nossas ações.
+            <Subtitle>Somos a Outermidia entregamos  com excelência, agilidade e gerenciamos todo o processo que envolve a veiculação de  midia OOH da produção ao checking fotográfico.
             </Subtitle>
             <Team>
                 <Card>
@@ -25,10 +25,10 @@ const Section7 = () => {
                         <div style={{ backgroundImage: `url(${Member1})` }} />
                     </Image>
                     <Description>
-                        <p>Caio Portela</p><br />
-                        <p>Gestor de Tráfego e Lançamento</p>
+                        <p>Pablo Lopes</p><br />
+                        <p>CEO</p>
                         <div>
-                            <a><i class="fab fa-linkedin-in" style={{ marginRight: '0px' }}></i></a>
+                            <a href="https://www.linkedin.com/in/pablosilveiralopes/"><i class="fab fa-linkedin-in" style={{ marginRight: '0px' }}></i></a>
                         </div>
                     </Description>
                 </Card>
@@ -37,25 +37,24 @@ const Section7 = () => {
                         <div style={{ backgroundImage: `url(${Member2})` }} />
                     </Image>
                     <Description>
-                        <p>Mitchell Henrique</p><br />
-                        <p>Social Media & cowpriter</p>
+                        <p>Frederico Juliano</p><br />
+                        <p>GESTOR COMERCIAL</p>
                         <div>
-                            <a><i class="fab fa-linkedin-in" style={{ marginRight: '0px' }}></i></a>
+                            <a href="https://www.linkedin.com/in/frederico-juliano/"><i class="fab fa-linkedin-in" style={{ marginRight: '0px' }}></i></a>
                         </div>
                     </Description>
                 </Card>
-                <Card style={{ marginRight: '0px' }}>
+                {/* <Card style={{ marginRight: '0px' }}>
                     <Image >
                         <div style={{ backgroundImage: `url(${Member3})` }} />
                     </Image>
                     <Description>
                         <p>Victor Marques</p><br />
-                        <p>Design e Desenvolvedor</p>
                         <div>
                             <a><i class="fab fa-linkedin-in" style={{ marginRight: '0px' }}></i></a>
                         </div>
                     </Description>
-                </Card>
+                </Card> */}
             </Team>
         </Container7>
     )
