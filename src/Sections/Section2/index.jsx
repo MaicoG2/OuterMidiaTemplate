@@ -15,19 +15,9 @@ const Section2 = ({ animation }) => {
                     <div />
                 </Division>
                 <Description>
-                    <p >milhões de
-                    pessoas são impactadas
-                    por mensagens instaladas em
-                    nossas Plataformas Out Of Home
-                    construindo uma forte relação
-                    entre marcas e públicos .
+                    <p >milhões de pessoas são impactadas diariamente por mensagens instaladas em nossos Outdoors, Empenas, painéis rodoviários, Front Light,  painéis de LED, Mobiliário urbano e projetos especiais,  construindo uma forte relação entre marcas e consumidores.  
                     </p>
-                    <p>Nossa operação de OOH e Live
-                    Marketing busca constantemente
-                    integrar tecnologias, manter-se
-                    atualizada e acima de tudo
-                    acompanhar as mudanças do
-                    Mercado de mídia Global.
+                    <p>Nascemos com a missão de ampliar e diversificar, dia a dia, o nosso portfólio de produtos, estando alinhados ao que há de mais inovador quanto às mídias mais requisitadas no mercado publicitário.
                     </p>
                 </Description>
             </div>

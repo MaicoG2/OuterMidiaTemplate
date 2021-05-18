@@ -5,7 +5,7 @@ import { Title, Division } from '../Section2/style'
 
 import Member1 from '../../assets/fundadores/pablo.png'
 import Member2 from '../../assets/fundadores/Fred.png'
-import Member3 from '../../assets/fundadores/Victor.webp'
+import Member3 from '../../assets/fundadores/andreia.jpg'
 
 const Section7 = () => {
 
@@ -44,17 +44,19 @@ const Section7 = () => {
                         </div>
                     </Description>
                 </Card>
-                {/* <Card style={{ marginRight: '0px' }}>
+                <Card>
                     <Image >
                         <div style={{ backgroundImage: `url(${Member3})` }} />
                     </Image>
                     <Description>
-                        <p>Victor Marques</p><br />
+                        <p>Andreia Pinheiro</p><br />
+                        <p>CONSULTORA INTERNA</p>
                         <div>
-                            <a><i class="fab fa-linkedin-in" style={{ marginRight: '0px' }}></i></a>
+                            <a href="https://www.linkedin.com/in/andr%C3%A9ia-pinheiro-45900b104/"><i class="fab fa-linkedin-in" style={{ marginRight: '0px' }}></i></a>
                         </div>
                     </Description>
-                </Card> */}
+                </Card>
+                
             </Team>
         </Container7>
     )
